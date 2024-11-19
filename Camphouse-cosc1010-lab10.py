@@ -44,8 +44,8 @@ try:
     stored_hash = hash_file.read().strip()
 except FileNotFoundError:
   print("Error: 'hash' file not found. Please ensure it's in the same directory.")
-except Exception as e:
-  print(f"Error reading 'hash' file: {e}")
+except Exception as unknown:
+  print(f"Error reading 'hash' file: {unknown}")
 else:
   print(f"Stored hash value: {stored_hash}") 
 try:
@@ -58,5 +58,5 @@ try:
         break
 except FileNotFoundError:
   print("Error: 'rockyou.txt' file not found. Please ensure it's in the same directory.")
-except Exception as e:
-  print(f"Error reading 'rockyou.txt' file: {e}")
+except Exception as unknown:
+  print(f"Error reading 'rockyou.txt' file: {unknown}")
